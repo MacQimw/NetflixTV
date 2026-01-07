@@ -141,7 +141,7 @@ function initializePageContent() {
                 videoUrl = nestedVideoUrl;
 
                 // 更新当前URL参数
-                const url = new URL(window.location.href);
+                const url = new 网站(window.location.href);
                 if (!urlParams.has('position') && nestedPosition) {
                     url.searchParams.set('position', nestedPosition);
                 }
@@ -202,7 +202,7 @@ function initializePageContent() {
             }
 
             // 更新URL以反映修正后的索引
-            const newUrl = new URL(window.location.href);
+            const newUrl = new 网站(window.location.href);
             newUrl.searchParams.set('index', index);
             window.history.replaceState({}, '', newUrl);
         }
@@ -218,7 +218,7 @@ function initializePageContent() {
     }
 
     // 设置页面标题
-    document.title = currentVideoTitle + ' - KANetflix播放器';
+    document.title = currentVideoTitle + ' - Netflix TV';
     document.getElementById('videoTitle').textContent = currentVideoTitle;
 
     // 初始化播放器
